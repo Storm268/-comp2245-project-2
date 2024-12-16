@@ -1,0 +1,178 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background: #000; /* Black background */
+    color: #fff; /* White text */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: fixed; /* Ensure it stretches fully to the side */
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.sidebar h1 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+    background: #495057; /* Dark grey hover effect */
+}
+
+/* Wrapper Styling */
+.wrapper {
+    flex: 1;
+    margin-left: 250px; /* Leave space for the fixed sidebar */
+    padding: 20px;
+}
+
+/* Page Title */
+.wrapper h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-buttons a button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #007bff;
+    background-color: #ffffff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-buttons a button.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.filter-buttons a button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    color: #fff;
+}
+
+/* Table Styling */
+.issue-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.issue-table th {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: left;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.issue-table td {
+    padding: 12px;
+    font-size: 14px;
+    border-bottom: 1px solid #dee2e6;
+    text-align: left;
+}
+
+.issue-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Status Badges */
+.status-open,
+.status-in-progress,
+.status-closed {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ffffff; /* Text color */
+}
+
+.status-open {
+    background-color: #28a745; /* Green */
+}
+
+.status-in-progress {
+    background-color: #ffc107; /* Yellow */
+    color: #333; /* Text color */
+}
+
+.status-closed {
+    background-color: #dc3545; /* Red */
+}
+/* Create New Issue Button */
+.create-issue-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745; /* Green button */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.create-issue-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}

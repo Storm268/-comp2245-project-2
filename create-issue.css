@@ -1,0 +1,133 @@
+/* General Styling */
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4f9; /* Light grey background for modern appearance */
+    margin: 0; /* Remove default margin */
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background: #000000; /* Black background */
+    color: #fff; /* White text */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: fixed; /* Ensure it stretches fully to the side */
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.sidebar h1 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+    background: #495057; /* Dark grey hover effect */
+}
+
+/* Main Content Styling */
+.main-content {
+    margin-left: 270px; /* Account for the sidebar width */
+    padding: 20px;
+    flex: 1;
+    width: calc(100% - 270px); /* Ensure content does not overlap */
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form Styling */
+.issue-form {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #444;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 14px;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Error Message */
+.error-message {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
